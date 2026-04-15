@@ -1,0 +1,26 @@
+.blink { animation: blinker 1s linear infinite; }
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.city-title {
+  color: rgb(227, 31, 31);
+  font-size: 48px;
+}
+
+.framed-image {
+  display: block;
+  float: right;
+  clear: right;
+  width: 60%;
+  height: auto;
+  margin: 20px 0 20px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.landmarks {
+  color: rgb(1, 33, 26);
+  font-family: "Courier New", Courier, monospace;
+}
