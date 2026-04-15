@@ -4,8 +4,16 @@
   50% { opacity: 0; }
 }
 
+body {
+  background-color: #1c1a27;
+}
+
+ul {
+  background-color: #fb8d1a;
+}
+
 .city-title {
-  color: rgb(227, 31, 31);
+  color: rgb#573cfa;
   font-size: 48px;
 }
 
@@ -15,12 +23,12 @@
   clear: right;
   width: 60%;
   height: auto;
-  margin: 20px 0 20px 20px;
-  border: 1px solid #000;
+  margin: 10px 0 10px 10px;
+  border: 1px solid #02864a;
   border-radius: 10px;
 }
 
 .landmarks {
-  color: rgb(1, 33, 26);
+  color: rgb#573cfa;
   font-family: "Courier New", Courier, monospace;
 }
