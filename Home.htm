@@ -3,84 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple homepage to navigate to Q1–Q12 pages.">
     <title>Home</title>
     <style>
+        :root {
+            color-scheme: dark;
+            --bg: #000000;
+            --text: #ffffff;
+            --muted: #b0b0b0;
+            --card: #1c1c1c;
+            --ring: #7dd3fc;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            --radius: 16px;
+        }
+        * { box-sizing: border-box; }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #FFFFFF;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
         }
         .hero {
             text-align: center;
-            padding: 100px 20px;
-            background-color: #000000;
+            padding: clamp(56px, 10vw, 96px) 20px;
+            background-color: var(--bg);
         }
         .hero h1 {
-            font-size: 3em;
+            font-size: clamp(2rem, 5vw, 3rem);
             margin: 0;
+            letter-spacing: -0.02em;
         }
         .hero p {
-            color: #B0B0B0;
-            font-size: 1.2em;
+            color: var(--muted);
+            font-size: 1.1em;
+            margin: 12px 0 0;
         }
         .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 50px 20px;
-            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 42px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+            max-width: 980px;
+            margin-inline: auto;
         }
         .card {
-            background-color: #1C1C1C;
-            border-radius: 16px;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
+            margin: 0;
         }
         .card a {
-            color: #FFFFFF;
+            display: block;
+            background-color: var(--card);
+            border-radius: var(--radius);
+            padding: 18px 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            color: var(--text);
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.15em;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+        .card a:hover {
+            transform: translateY(-4px);
+        }
+        .card a:focus-visible {
+            outline: 3px solid var(--ring);
+            outline-offset: 3px;
         }
         .cta {
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             color: #000000;
             text-align: center;
-            padding: 50px 20px;
+            padding: 44px 20px;
         }
         .cta h2 {
             margin: 0;
         }
+        .cta p {
+            margin: 10px 0 0;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .card a { transition: none; }
+            .card a:hover { transform: none; }
+        }
     </style>
 </head>
 <body>
-    <section class="hero">
+    <header class="hero">
         <h1>Welcome to My Website</h1>
         <p>Explore the pages below</p>
-    </section>
-    <section class="cards">
-        <div class="card"><a href="Q1.htm">Q1</a></div>
-        <div class="card"><a href="Q2.htm">Q2</a></div>
-        <div class="card"><a href="Q3.htm">Q3</a></div>
-        <div class="card"><a href="Q4.htm">Q4</a></div>
-        <div class="card"><a href="Q5.htm">Q5</a></div>
-        <div class="card"><a href="Q6.htm">Q6</a></div>
-        <div class="card"><a href="Q7.htm">Q7</a></div>
-        <div class="card"><a href="Q8.htm">Q8</a></div>
-        <div class="card"><a href="Q9.htm">Q9</a></div>
-        <div class="card"><a href="Q10.htm">Q10</a></div>
-        <div class="card"><a href="Q11.htm">Q11</a></div>
-        <div class="card"><a href="Q12.htm">Q12</a></div>
-    </section>
-    <section class="cta">
+    </header>
+
+    <main aria-label="Questions">
+        <ul class="cards">
+            <li class="card"><a href="Q1.htm">Q1</a></li>
+            <li class="card"><a href="Q2.htm">Q2</a></li>
+            <li class="card"><a href="Q3.htm">Q3</a></li>
+            <li class="card"><a href="Q4.htm">Q4</a></li>
+            <li class="card"><a href="Q5.htm">Q5</a></li>
+            <li class="card"><a href="Q6.htm">Q6</a></li>
+            <li class="card"><a href="Q7.htm">Q7</a></li>
+            <li class="card"><a href="Q8.htm">Q8</a></li>
+            <li class="card"><a href="Q9.htm">Q9</a></li>
+            <li class="card"><a href="Q10.htm">Q10</a></li>
+            <li class="card"><a href="Q11.htm">Q11</a></li>
+            <li class="card"><a href="Q12.htm">Q12</a></li>
+        </ul>
+    </main>
+
+    <footer class="cta">
         <h2>Get Started</h2>
-        <p>Begin your journey here.</p>
-    </section>
+        <p>Pick any question card above to continue.</p>
+    </footer>
 </body>
 </html>

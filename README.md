@@ -50,7 +50,7 @@ I am also experimenting with creative web designs. You can find these live here:
     git clone https://github.com/YaifabaSapamcha/Web-T.git
     ```
 2.  **For Static Files (HTML/CSS/JS)**:
-    Open any `.htm` or `.html` file directly in your browser.
+    Open `Home.htm` (or `index.html`, which redirects to `Home.htm`) directly in your browser.
 3.  **For PHP/Database Files**:
     * Move the files to your `htdocs` (XAMPP) or `var/www/html` (Linux) folder.
     * Start **Apache** and **MySQL** via the XAMPP Control Panel.
