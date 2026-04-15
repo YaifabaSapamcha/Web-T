@@ -1,24 +1,89 @@
+:root {
+  color-scheme: dark;
+  --primary: #573cfa;
+  --secondary: #fb8d1a;
+  --danger: #e8083e;
+  --success: #02864a;
+  --neutral: #1c1a27;
+
+  --bg: var(--neutral);
+  --text: var(--primary);
+  --muted: var(--secondary);
+  --card: var(--primary);
+  --cardText: var(--neutral);
+  --ring: var(--danger);
+  --shadow: 0 10px 30px rgba(28, 26, 39, 0.55);
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 32px 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+body > * {
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .blink { animation: blinker 1s linear infinite; }
 
 @keyframes blinker {
   50% { opacity: 0; }
 }
 
-body {
-  background-color: #1c1a27;
+ul {
+  background-color: var(--secondary);
+  color: var(--neutral);
 }
 
-ul {
-  background-color: #fb8d1a;
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 22px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 14px;
 }
 
 .card {
-  background-color: #fb8d1a;
+  margin: 0;
+  background-color: var(--secondary);
+  color: var(--neutral);
+  border-radius: var(--radius);
+  padding: 16px 16px;
 }
 
 .city-title {
-  color: rgb#573cfa;
+  color: var(--primary);
   font-size: 48px;
+}
+
+h3 {
+  margin-top: 34px;
+  margin-bottom: 12px;
+}
+
+marquee {
+  display: block;
+  margin-top: 28px;
+  background-color: var(--secondary);
+  color: var(--neutral);
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .framed-image {
@@ -28,11 +93,16 @@ ul {
   width: 60%;
   height: auto;
   margin: 10px 0 10px 10px;
-  border: 1px solid #02864a;
-  border-radius: 10px;
+  border: 1px solid #000;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .landmarks {
-  color: rgb#573cfa;
+  color: var(--neutral);
+  background-color: var(--secondary);
   font-family: "Courier New", Courier, monospace;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  box-shadow: var(--shadow);
 }
