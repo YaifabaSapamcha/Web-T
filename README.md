@@ -15,8 +15,6 @@ This repository serves as a comprehensive collection of my web development journ
 ## 🛠️ Technologies Used
 
 * **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-* **Backend**: PHP (XAMPP/LAMP Stack)
-* **Database**: MySQL
 * **Deployment**: Vercel
 
 ---
