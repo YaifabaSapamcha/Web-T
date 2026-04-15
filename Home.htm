@@ -8,12 +8,19 @@
     <style>
         :root {
             color-scheme: dark;
-            --bg: #000000;
-            --text: #ffffff;
-            --muted: #b0b0b0;
-            --card: #1c1c1c;
-            --ring: #7dd3fc;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            --primary: #573CFA;
+            --secondary: #F88D1A;
+            --danger: #E8083E;
+            --success: #02864A;
+            --neutral: #1C1A27;
+
+            --bg: var(--neutral);
+            --text: var(--primary);
+            --muted: var(--secondary);
+            --card: var(--primary);
+            --cardText: var(--neutral);
+            --ring: var(--danger);
+            --shadow: 0 10px 30px rgba(28, 26, 39, 0.55);
             --radius: 16px;
         }
         * { box-sizing: border-box; }
@@ -59,7 +66,7 @@
             padding: 18px 16px;
             text-align: center;
             box-shadow: var(--shadow);
-            color: var(--text);
+            color: var(--cardText);
             text-decoration: none;
             font-size: 1.15em;
             transition: transform 180ms ease, box-shadow 180ms ease;
@@ -72,8 +79,8 @@
             outline-offset: 3px;
         }
         .cta {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: var(--secondary);
+            color: var(--neutral);
             text-align: center;
             padding: 44px 20px;
         }
@@ -91,7 +98,7 @@
 </head>
 <body>
     <header class="hero">
-        <h1>Sapamcha Yaiphaba</h1>
+        <h1>Hi, I'm Sapamcha Yaiphaba</h1>
         <p>Welcome to My Website</p>
         <p>Explore the pages below</p>
     </header>
@@ -114,8 +121,8 @@
     </main>
 
     <footer class="cta">
-        <h2>Get Started</h2>
-        <p>Pick any question card above to continue.</p>
+        <h2>To get Started</h2>
+        <p>Pick any question number card above to view the answer.</p>
     </footer>
 </body>
 </html>
