@@ -7,12 +7,12 @@
   --neutral: #1c1a27;
 
   --bg: var(--neutral);
-  --text: var(--primary);
+  --text: var(--secondary);
   --muted: var(--secondary);
   --card: var(--primary);
   --cardText: var(--neutral);
   --ring: var(--danger);
-  --shadow: 0 10px 30px rgba(28, 26, 39, 0.55);
+  --shadow: 0 10px 30px var(--success);
   --radius: 16px;
 }
 
@@ -33,7 +33,7 @@ body > * {
 }
 
 p {
-  color: var(--muted);
+  color: var(--secondary);
   font-size: 1.05rem;
 }
 
@@ -44,8 +44,8 @@ p {
 }
 
 ul {
-  background-color: var(--secondary);
-  color: var(--neutral);
+  background-color: var(--neutral);
+  color: var(--secondary);
 }
 
 .cards {
@@ -67,7 +67,7 @@ ul {
 }
 
 .city-title {
-  color: var(--primary);
+  color: var(--danger);
   font-size: 48px;
 }
 
@@ -83,7 +83,7 @@ marquee {
   color: var(--neutral);
   padding: 14px 16px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: var(--success);
 }
 
 .framed-image {
@@ -93,9 +93,9 @@ marquee {
   width: 60%;
   height: auto;
   margin: 10px 0 10px 10px;
-  border: 1px solid #000;
+  border: 1px solid var(--success);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: var(--success);
 }
 
 .landmarks {
@@ -104,5 +104,5 @@ marquee {
   font-family: "Courier New", Courier, monospace;
   border-radius: var(--radius);
   padding: 18px 22px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--success);
 }
