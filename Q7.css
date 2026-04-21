@@ -7,7 +7,7 @@
   --neutral: #1c1a27;
 
   --bg: var(--neutral);
-  --text: var(--neutral);
+  --text: var(--danger);
   --muted: var(--secondary);
   --card: var(--primary);
   --cardText: var(--neutral);
@@ -53,7 +53,7 @@ ul {
   margin: 0;
   padding: 22px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: var(--success);
   display: grid;
   gap: 14px;
 }
@@ -86,17 +86,6 @@ marquee {
   box-shadow: var(--success);
 }
 
-.framed-image {
-  display: block;
-  float: right;
-  clear: right;
-  width: 60%;
-  height: auto;
-  margin: 10px 0 10px 10px;
-  border: 1px solid var(--success);
-  border-radius: var(--radius);
-  box-shadow: var(--success);
-}
 
 .landmarks {
   color: var(--neutral);
