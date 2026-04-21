@@ -7,7 +7,7 @@
   --neutral: #1c1a27;
 
   --bg: var(--neutral);
-  --text: var(--secondary);
+  --text: var(--neutral);
   --muted: var(--secondary);
   --card: var(--primary);
   --cardText: var(--neutral);
