@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form</title>
+    <link rel="stylesheet" href="Form_style.css">
+</head>
+<body>
+
+<h2>HTML Form Example</h2>
+
+<form action="submit_page.html" method="POST">
+
+    <!-- Fieldset 1: Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <p>
+            <label for="username"><b>Username:</b></label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+        </p>
+
+        <p>
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </p>
+
+        <p>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter email" multiple>
+        </p>
+
+    </fieldset>
+
+    <!-- Fieldset 2: Contact Info -->
+    <fieldset>
+        <legend>Contact Details</legend>
+
+        <p>
+            <label for="phone">Telephone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </p>
+
+        <p>
+            <label for="website">Website URL:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+        </p>
+
+        <p>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="Search here">
+        </p>
+
+    </fieldset>
+
+    <!-- Fieldset 3: Numeric Inputs -->
+    <fieldset>
+        <legend>Numeric & Range</legend>
+
+        <p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100" step="1">
+        </p>
+
+        <p>
+            <label for="volume">Volume (0-100):</label>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+        </p>
+
+    </fieldset>
+
+    <!-- Fieldset 4: Date & Time -->
+    <fieldset>
+        <legend>Date and Time</legend>
+
+        <p>
+            <label for="date">Start Date:</label>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <p>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time">
+        </p>
+
+        <p>
+            <label for="week">Select Week:</label>
+            <input type="week" id="week" name="week">
+        </p>
+
+        <p>
+            <label for="month">Select Month:</label>
+            <input type="month" id="month" name="month">
+        </p>
+
+        <p>
+            <label for="datetime">Meeting Time:</label>
+            <input type="datetime-local" id="datetime" name="meeting_time">
+        </p>
+
+    </fieldset>
+
+    <!-- Fieldset 5: Choices -->
+    <fieldset>
+        <legend>Choices</legend>
+
+        <p><strong>Select Gender:</strong></p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <p><strong>Select Hobbies:</strong></p>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="gaming" name="hobby" value="gaming">
+        <label for="gaming">Gaming</label>
+
+    </fieldset>
+
+    <!-- Fieldset 6: Dropdown -->
+    <fieldset>
+        <legend>Location</legend>
+
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+
+    </fieldset>
+
+    <!-- Fieldset 7: Other Inputs -->
+    <fieldset>
+        <legend>Other Inputs</legend>
+
+        <p>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="fav_color">
+        </p>
+
+        <p>
+            <label for="file">Upload Image:</label>
+            <input type="file" id="file" name="file">
+        </p>
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="user_id" value="12345">
+
+    </fieldset>
+
+    <!-- Buttons -->
+    <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="Click Me" onclick="alert('Hello World')">
+    </p>
+
+</form>
+
+</body>
+</html>
