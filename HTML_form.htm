@@ -6,163 +6,176 @@
     <title>Complete HTML Form</title>
     <link rel="stylesheet" href="Form_style.css">
 </head>
-<body>
+<body class="theme-default">
 
-<h2>HTML Form Example</h2>
+        <h2 align="center">HTML Form Example</h2>
 
-<form action="submit_page.html" method="POST">
-
-    <!-- Fieldset 1: Personal Information -->
-    <fieldset>
-        <legend>Personal Information</legend>
-
-        <div class="input-group">
-            <input type="text" id="username" name="username" required placeholder=" ">
-            <label for="username">Username</label>
+        <!-- Theme Switcher Buttons (for demonstration) -->
+        <div class="theme-switcher">
+            <button onclick="setTheme('default')">Default</button>
+            <button onclick="setTheme('light')">Light</button>
+            <button onclick="setTheme('dark')">Dark</button>
         </div>
 
-        <div class="input-group">
-            <input type="password" id="password" name="password" required placeholder=" ">
-            <label for="password">Password</label>
-        </div>
+    <form action="submit_page.html" method="POST">
 
-        <div class="input-group">
-            <input type="email" id="email" name="email" placeholder=" " multiple>
-            <label for="email">Email</label>
-        </div>
+        <!-- Fieldset 1: Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
 
-    </fieldset>
+            <div class="input-group">
+                <input type="text" id="username" name="username" required placeholder=" ">
+                <label for="username">Username</label>
+            </div>
 
-    <!-- Fieldset 2: Contact Info -->
-    <fieldset>
-        <legend>Contact Details</legend>
+            <div class="input-group">
+                <input type="password" id="password" name="password" required placeholder=" ">
+                <label for="password">Password</label>
+            </div>
 
-        <div class="input-group">
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" ">
-            <label for="phone">Telephone</label>
-        </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder=" " multiple>
+                <label for="email">Email</label>
+            </div>
 
-        <div class="input-group">
-            <input type="url" id="website" name="website" placeholder=" ">
-            <label for="website">Website URL</label>
-        </div>
+        </fieldset>
 
-        <div class="input-group">
-            <input type="search" id="search" name="search" placeholder=" ">
-            <label for="search">Search</label>
-        </div>
+        <!-- Fieldset 2: Contact Info -->
+        <fieldset>
+            <legend>Contact Details</legend>
 
-    </fieldset>
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" ">
+                <label for="phone">Telephone</label>
+            </div>
 
-    <!-- Fieldset 3: Numeric Inputs -->
-    <fieldset>
-        <legend>Numeric & Range</legend>
+            <div class="input-group">
+                <input type="url" id="website" name="website" placeholder=" ">
+                <label for="website">Website URL</label>
+            </div>
 
-        <div class="input-group">
-            <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder=" ">
-            <label for="age">Age</label>
-        </div>
+            <div class="input-group">
+                <input type="search" id="search" name="search" placeholder=" ">
+                <label for="search">Search</label>
+            </div>
 
-        <div class="input-group">
-            <input type="range" id="volume" name="volume" min="0" max="100">
-            <label for="volume">Volume (0–100)</label>
-        </div>
+        </fieldset>
 
-    </fieldset>
+        <!-- Fieldset 3: Numeric Inputs -->
+        <fieldset>
+            <legend>Numeric & Range</legend>
 
-    <!-- Fieldset 4: Date & Time -->
-    <fieldset>
-        <legend>Date and Time</legend>
+            <div class="input-group">
+                <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder=" ">
+                <label for="age">Age</label>
+            </div>
 
-        <div class="input-group">
-            <input type="date" id="date" name="date" placeholder=" ">
-            <label for="date">Start Date</label>
-        </div>
+            <div class="input-group">
+                <input type="range" id="volume" name="volume" min="0" max="100">
+                <label for="volume">Volume (0–100)</label>
+            </div>
 
-        <div class="input-group">
-            <input type="time" id="time" name="time" placeholder=" ">
-            <label for="time">Select Time</label>
-        </div>
+        </fieldset>
 
-        <div class="input-group">
-            <input type="week" id="week" name="week" placeholder=" ">
-            <label for="week">Select Week</label>
-        </div>
+        <!-- Fieldset 4: Date & Time -->
+        <fieldset>
+            <legend>Date and Time</legend>
 
-        <div class="input-group">
-            <input type="month" id="month" name="month" placeholder=" ">
-            <label for="month">Select Month</label>
-        </div>
+            <div class="input-group">
+                <input type="date" id="date" name="date" placeholder=" ">
+                <label for="date">Start Date</label>
+            </div>
 
-        <div class="input-group">
-            <input type="datetime-local" id="datetime" name="meeting_time" placeholder=" ">
-            <label for="datetime">Meeting Time</label>
-        </div>
+            <div class="input-group">
+                <input type="time" id="time" name="time" placeholder=" ">
+                <label for="time">Select Time</label>
+            </div>
 
-    </fieldset>
+            <div class="input-group">
+                <input type="week" id="week" name="week" placeholder=" ">
+                <label for="week">Select Week</label>
+            </div>
 
-    <!-- Fieldset 5: Choices -->
-    <fieldset>
-        <legend>Choices</legend>
+            <div class="input-group">
+                <input type="month" id="month" name="month" placeholder=" ">
+                <label for="month">Select Month</label>
+            </div>
 
-        <p><strong>Select Gender:</strong></p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
+            <div class="input-group">
+                <input type="datetime-local" id="datetime" name="meeting_time" placeholder=" ">
+                <label for="datetime">Meeting Time</label>
+            </div>
 
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+        </fieldset>
 
-        <p><strong>Select Hobbies:</strong></p>
-        <input type="checkbox" id="reading" name="hobby" value="reading">
-        <label for="reading">Reading</label>
+        <!-- Fieldset 5: Choices -->
+        <fieldset>
+            <legend>Choices</legend>
 
-        <input type="checkbox" id="gaming" name="hobby" value="gaming">
-        <label for="gaming">Gaming</label>
+            <p><strong>Select Gender:</strong></p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
 
-    </fieldset>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
 
-    <!-- Fieldset 6: Dropdown -->
-    <fieldset>
-        <legend>Location</legend>
+            <p><strong>Select Hobbies:</strong></p>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading">Reading</label>
 
-        <div class="input-group">
-            <select id="country" name="country">
-                <option value="india">India</option>
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-            </select>
-            <label for="country">Select Country</label>
-        </div>
+            <input type="checkbox" id="gaming" name="hobby" value="gaming">
+            <label for="gaming">Gaming</label>
 
-    </fieldset>
+        </fieldset>
 
-    <!-- Fieldset 7: Other Inputs -->
-    <fieldset>
-        <legend>Other Inputs</legend>
+        <!-- Fieldset 6: Dropdown -->
+        <fieldset>
+            <legend>Location</legend>
 
-        <div class="input-group">
-            <input type="color" id="color" name="fav_color">
-            <label for="color">Favorite Color</label>
-        </div>
+            <div class="input-group">
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                </select>
+                <label for="country">Select Country</label>
+            </div>
 
-        <div class="input-group">
-            <input type="file" id="file" name="file">
-            <label for="file">Upload Image</label>
-        </div>
+        </fieldset>
 
-        <!-- Hidden Input -->
-        <input type="hidden" name="user_id" value="12345">
+        <!-- Fieldset 7: Other Inputs -->
+        <fieldset>
+            <legend>Other Inputs</legend>
 
-    </fieldset>
+            <div class="input-group">
+                <input type="color" id="color" name="fav_color">
+                <label for="color">Favorite Color</label>
+            </div>
 
-    <!-- Buttons -->
-    <p>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-        <input type="button" value="Click Me" onclick="alert('Hello World')">
-    </p>
+            <div class="input-group">
+                <input type="file" id="file" name="file">
+                <label for="file">Upload Image</label>
+            </div>
 
-</form>
+            <!-- Hidden Input -->
+            <input type="hidden" name="user_id" value="12345">
+
+        </fieldset>
+
+        <!-- Buttons -->
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Click Me" onclick="alert('Hi, Welcome to my website')">
+        </p>
+        <script>
+            function setTheme(theme) {
+                document.body.className = ''; // Remove all classes
+                document.body.classList.add('theme-' + theme);
+            }
+        </script>
+
+    </form>
 
 </body>
 </html>

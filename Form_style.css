@@ -8,17 +8,17 @@
 
 /* Body */
 body {
-    background: linear-gradient(135deg, #0f172a, #020617);
+    background: linear-gradient(135deg, #0d1b3e, #0a1628);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #e5e7eb;
+    color: #DADCE2;
 }
 
 /* Form Container */
 form {
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(13, 27, 62, 0.88);
     backdrop-filter: blur(12px);
     padding: 35px 40px;
     border-radius: 18px;
@@ -32,13 +32,19 @@ form {
 h2 {
     text-align: center;
     margin-bottom: 25px;
-    color: #f9fafb;
+    color: #B8DFF3;
     font-weight: 600;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Fieldset */
 fieldset {
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(184, 223, 243, 0.1);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 14px;
@@ -47,14 +53,14 @@ fieldset {
 }
 
 fieldset:hover {
-    border-color: rgba(99,102,241,0.4);
+    border-color: rgba(36, 165, 232, 0.4);
 }
 
 /* Legend */
 legend {
     padding: 0 10px;
     font-size: 14px;
-    color: #9ca3af;
+    color: #B8DFF3;
 }
 
 /* Floating Label Container */
@@ -68,9 +74,9 @@ input, select {
     width: 100%;
     padding: 12px;
     border-radius: 10px;
-    border: 1px solid #1f2933;
+    border: 1px solid #1e3a5f;
     background: transparent;
-    color: #f9fafb;
+    color: #DADCE2;
     font-size: 14px;
     outline: none;
     transition: 0.3s;
@@ -78,8 +84,8 @@ input, select {
 
 /* Focus Glow */
 input:focus, select:focus {
-    border-color: #6366f1;
-    box-shadow: 0 0 10px rgba(99,102,241,0.4);
+    border-color: #24A5E8;
+    box-shadow: 0 0 10px rgba(36, 165, 232, 0.4);
 }
 
 /* Floating Labels */
@@ -88,7 +94,7 @@ input:focus, select:focus {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    color: #6b7280;
+    color: #B8DFF3;
     font-size: 13px;
     pointer-events: none;
     transition: 0.3s ease;
@@ -103,8 +109,8 @@ select:valid + label {
     top: -8px;
     left: 10px;
     font-size: 11px;
-    color: #6366f1;
-    background: #020617;
+    color: #24A5E8;
+    background: #0a1628;
     padding: 0 5px;
 }
 
@@ -113,6 +119,7 @@ input[type="radio"],
 input[type="checkbox"] {
     width: auto;
     margin-right: 6px;
+    accent-color: #24A5E8;
 }
 
 /* Buttons */
@@ -130,32 +137,33 @@ input[type="button"] {
 
 /* Button Styles */
 input[type="submit"] {
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(135deg, #24A5E8, #3C58C1);
     color: white;
 }
 
 input[type="reset"] {
-    background: #1f2937;
-    color: #d1d5db;
+    background: #DADCE2;
+    color: #0d1b3e;
 }
 
 input[type="button"] {
-    background: #10b981;
+    background: #3C58C1;
     color: white;
 }
 
 /* Hover Effects */
 input[type="submit"]:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(99,102,241,0.4);
+    box-shadow: 0 10px 20px rgba(36, 165, 232, 0.4);
 }
 
 input[type="reset"]:hover {
-    background: #374151;
+    background: #B8DFF3;
+    color: #0d1b3e;
 }
 
 input[type="button"]:hover {
-    background: #059669;
+    background: #24A5E8;
 }
 
 /* Animations */
