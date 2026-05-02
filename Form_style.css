@@ -30,7 +30,7 @@
 body.theme-light {
     --bg: linear-gradient(135deg, #eaf6ff, #d4ebff);
     --body-bg: #f7fbff;
-    --text: #0f2341;
+    --text: #3C58C1;
     --text-muted: #3c58c1;
     --surface: rgba(255, 255, 255, 0.95);
     --surface-soft: rgba(227, 239, 255, 0.9);
