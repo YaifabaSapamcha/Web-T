@@ -16,20 +16,20 @@
     <fieldset>
         <legend>Personal Information</legend>
 
-        <p>
-            <label for="username"><b>Username:</b></label>
-            <input type="text" id="username" name="username" placeholder="Enter username" required>
-        </p>
+        <div class="input-group">
+            <input type="text" id="username" name="username" required placeholder=" ">
+            <label for="username">Username</label>
+        </div>
 
-        <p>
-            <label for="password"><b>Password:</b></label>
-            <input type="password" id="password" name="password" placeholder="Enter password" required>
-        </p>
+        <div class="input-group">
+            <input type="password" id="password" name="password" required placeholder=" ">
+            <label for="password">Password</label>
+        </div>
 
-        <p>
-            <label for="email"><b>Email:</b></label>
-            <input type="email" id="email" name="email" placeholder="Enter email" multiple>
-        </p>
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder=" " multiple>
+            <label for="email">Email</label>
+        </div>
 
     </fieldset>
 
@@ -37,20 +37,20 @@
     <fieldset>
         <legend>Contact Details</legend>
 
-        <p>
-            <label for="phone">Telephone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        </p>
+        <div class="input-group">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" ">
+            <label for="phone">Telephone</label>
+        </div>
 
-        <p>
-            <label for="website">Website URL:</label>
-            <input type="url" id="website" name="website" placeholder="https://example.com">
-        </p>
+        <div class="input-group">
+            <input type="url" id="website" name="website" placeholder=" ">
+            <label for="website">Website URL</label>
+        </div>
 
-        <p>
-            <label for="search">Search:</label>
-            <input type="search" id="search" name="search" placeholder="Search here">
-        </p>
+        <div class="input-group">
+            <input type="search" id="search" name="search" placeholder=" ">
+            <label for="search">Search</label>
+        </div>
 
     </fieldset>
 
@@ -58,15 +58,15 @@
     <fieldset>
         <legend>Numeric & Range</legend>
 
-        <p>
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="1" max="100" step="1">
-        </p>
+        <div class="input-group">
+            <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder=" ">
+            <label for="age">Age</label>
+        </div>
 
-        <p>
-            <label for="volume">Volume (0-100):</label>
+        <div class="input-group">
             <input type="range" id="volume" name="volume" min="0" max="100">
-        </p>
+            <label for="volume">Volume (0–100)</label>
+        </div>
 
     </fieldset>
 
@@ -74,30 +74,30 @@
     <fieldset>
         <legend>Date and Time</legend>
 
-        <p>
-            <label for="date">Start Date:</label>
-            <input type="date" id="date" name="date">
-        </p>
+        <div class="input-group">
+            <input type="date" id="date" name="date" placeholder=" ">
+            <label for="date">Start Date</label>
+        </div>
 
-        <p>
-            <label for="time">Select Time:</label>
-            <input type="time" id="time" name="time">
-        </p>
+        <div class="input-group">
+            <input type="time" id="time" name="time" placeholder=" ">
+            <label for="time">Select Time</label>
+        </div>
 
-        <p>
-            <label for="week">Select Week:</label>
-            <input type="week" id="week" name="week">
-        </p>
+        <div class="input-group">
+            <input type="week" id="week" name="week" placeholder=" ">
+            <label for="week">Select Week</label>
+        </div>
 
-        <p>
-            <label for="month">Select Month:</label>
-            <input type="month" id="month" name="month">
-        </p>
+        <div class="input-group">
+            <input type="month" id="month" name="month" placeholder=" ">
+            <label for="month">Select Month</label>
+        </div>
 
-        <p>
-            <label for="datetime">Meeting Time:</label>
-            <input type="datetime-local" id="datetime" name="meeting_time">
-        </p>
+        <div class="input-group">
+            <input type="datetime-local" id="datetime" name="meeting_time" placeholder=" ">
+            <label for="datetime">Meeting Time</label>
+        </div>
 
     </fieldset>
 
@@ -125,12 +125,14 @@
     <fieldset>
         <legend>Location</legend>
 
-        <label for="country">Select Country:</label>
-        <select id="country" name="country">
-            <option value="india">India</option>
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-        </select>
+        <div class="input-group">
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+            <label for="country">Select Country</label>
+        </div>
 
     </fieldset>
 
@@ -138,15 +140,15 @@
     <fieldset>
         <legend>Other Inputs</legend>
 
-        <p>
-            <label for="color">Favorite Color:</label>
+        <div class="input-group">
             <input type="color" id="color" name="fav_color">
-        </p>
+            <label for="color">Favorite Color</label>
+        </div>
 
-        <p>
-            <label for="file">Upload Image:</label>
+        <div class="input-group">
             <input type="file" id="file" name="file">
-        </p>
+            <label for="file">Upload Image</label>
+        </div>
 
         <!-- Hidden Input -->
         <input type="hidden" name="user_id" value="12345">
